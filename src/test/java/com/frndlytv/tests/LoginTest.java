@@ -40,6 +40,7 @@ public class LoginTest extends BaseTest {
 
         LoginPage loginPage = new LoginPage();
         loginPage.navigateToLoginPage();
+        loginPage.clickSignLoginButton();
 
         // Attempt login with invalid credentials
         loginPage.login("invalid@email.com", "wrongpassword");
@@ -59,6 +60,7 @@ public class LoginTest extends BaseTest {
 
         LoginPage loginPage = new LoginPage();
         loginPage.navigateToLoginPage();
+        loginPage.clickSignLoginButton();
 
         // Attempt login with empty credentials
         loginPage.login("", "");
